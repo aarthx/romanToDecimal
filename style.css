@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 5vh;
+}
+
+h2 {
+    margin: 0;
+}
+
+#return {
+    background-color: #4CAF50; /* Green */
+    opacity: 1;
+    border: none;
+    color: white;
+    text-align: center;
+    font-style: bold;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3.5vh;
+    cursor: pointer;
+    box-shadow: 3px 3px black;
+    margin: 0 1vw;
+    height: 4vh;
+    width: 4vw;
+    border-radius: 10px;
+}
+
+.body-box {
+    background-image: radial-gradient(circle, #db222a, #c2203d, #a42748, #842d4b, #643047);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background: #053C5E;
+    width: 50%;
+    height: 60%;
+    border: solid 10px white;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 10%;
+}
+
+.title-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70%;
+    white-space: nowrap;
+    margin-bottom: 1%;
+}
+
+.input-output {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    white-space: nowrap;
+    margin-bottom: 4%;
+}
+
+.input-output input {
+    width: 40%;
+    height: 75%;
+    font-size: 40px;
+    text-align: center;
+}
+
+.input-output #output {
+   cursor: default;
+}
+
+.convert {
+    background-color: white;
+    font-size: 150%;
+    width: 30%;
+    height: 8%;
+    box-shadow: 5px 5px 5px black;
+}
+.convert:hover {
+    background-color: rgba(255, 255, 255, 0.582);
+    cursor: pointer;
+}
+.convert:active {
+    box-shadow: none;
+}

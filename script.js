@@ -42,13 +42,6 @@ function converteRomano() {
             alert('Coloque um número romano válido')
             break
         }
-
-        if(dezena == 0) {
-            input.value = ''
-            alert('Coloque um número romano válido')
-            break
-        }
-
     }
 }
 
@@ -95,7 +88,9 @@ function calculaDezena(input) {
         return 80
     } else if(input.includes('XC')) {
         return 90
-    } else {
+    } else if(input.includes('XIX') && !input.includes('XXIX') && !input.includes('XXXIX')) {
+        return 10
+    }else {
         return 0
     }
 }
@@ -119,7 +114,9 @@ function calculaCentena(input) {
         return 800
     } else if(input.includes('CM')) {
         return 900
-    } else {
+    } else if(input.includes('CXC') && !input.includes('CCXC') && !input.includes('CCCXC')) {
+        return 100
+    }else {
         return 0
     }
 }
@@ -131,6 +128,8 @@ function calculaMilhar(input) {
         return 2000
     } else if(input.includes('MMM')) {
         return 3000
+    } else if(input.includes('MCM') && !input.includes('MMCM') && !input.includes('MMMCM')) {
+        return 1000
     } else {
         return 0
     }

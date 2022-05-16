@@ -143,3 +143,7 @@ function paraMaiusculas(e) {
     e.target.selectionStart = ss;
     e.target.selectionEnd = se;
 }
+
+function voltar() {
+    location.replace('https://aarthx.github.io/');
+}
